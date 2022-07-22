@@ -1,0 +1,10 @@
+.tabs{
+    color: white;
+    font-weight: 700;
+    padding: 4px 15px 4px 15px;
+}
+.active-tabs{
+    color: rgb(68,0,162);
+    background-color: white;
+    border-radius: 15px;
+}

@@ -7,9 +7,8 @@ const Button = {
       variants: {
         solid: {
           color: "white",
-          fontWeight: "600",
-          backgroundImage:
-            "linear-gradient(to right, rgb(128, 90, 213), rgb(49, 130, 206))"
+          fontWeight: "700",
+          bg: "rgb(137,93,200)"
         },
         outline: {
           color: "white",
@@ -21,7 +20,7 @@ const Button = {
           fontWeight: "700",
         },
         ghost: {
-          color: "rgb(74, 85, 104)"
+          color: "white"
         }
       }
 };
