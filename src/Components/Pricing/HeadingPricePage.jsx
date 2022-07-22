@@ -4,7 +4,7 @@ import { Button, Heading, Text, Flex, Box } from '@chakra-ui/react'
 
 const HeadingPricePage = () => {
   return (
-    <Box>
+    <>
         <Box>
           <Heading color="white" fontSize="70px" >Find a plan that's right for you</Heading>
             <Flex margin={4} gap={1}>
@@ -12,7 +12,7 @@ const HeadingPricePage = () => {
               <Button variant="outline" size="sm" rightIcon={<ArrowForwardIcon />} _hover="none">TALK TO US</Button>
             </Flex>
         </Box>
-    </Box>
+    </>
   )
 }
 

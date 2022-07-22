@@ -1,32 +1,71 @@
-import React from 'react';
-import { Flex, Tabs, TabList, Tab, Box } from '@chakra-ui/react';
+import React, { useState } from 'react';
+import { Flex } from '@chakra-ui/react';
+import Pricing from '../../Pages/Css/pricing.module.css';
 
 const PricingDetails = () => {
+  const [toggleState1, setToggleState1] = useState(1);
+  const [toggleState2, setToggleState2] = useState(1);
+
+  
   return (
-        <Box>
+        <>
+          <div className={Pricing.tab}>
           <Flex gap="7%">
-            <Flex>
-              <Tabs variant="soft-rounded" colorScheme="red" size="sm" bg="rgb(137,93,200)">
-                <TabList>
-                    <Tab _selected={{ color: 'rgb(68,0,162)', bg: 'rgb(255,254,254)' }}>ANNUAL</Tab>
-                    <Tab _selected={{ color: 'rgb(68,0,162)', bg: 'rgb(255,254,254)' }}>MONTHLY</Tab>
-                </TabList>
-              </Tabs>
+            <Flex bg="rgb(137,93,200)" gap={4} borderRadius="20px">
+              <button 
+                className={toggleState1 === 1 ? "tabs active-tabs" : "tabs"} 
+                onClick={()=> setToggleState1(1)}
+              >
+                ANNUAL
+              </button>
+              <button 
+                className={toggleState1 === 2 ? "tabs active-tabs" : "tabs"} 
+                onClick={()=> setToggleState1(2)}
+              >
+                MONTHLY
+              </button>
             </Flex>
-            <Flex>
-            <Tabs variant="soft-rounded" size="sm" bg="rgb(137,93,200)">
-                <TabList>
-                    <Tab _selected={{ color: 'rgb(68,0,162)', bg: 'rgb(255,254,254)' }}>USD</Tab>
-                    <Tab _selected={{ color: 'rgb(68,0,162)', bg: 'rgb(255,254,254)' }}>EUR</Tab>
-                    <Tab _selected={{ color: 'rgb(68,0,162)', bg: 'rgb(255,254,254)' }}>GBP</Tab>
-                    <Tab _selected={{ color: 'rgb(68,0,162)', bg: 'rgb(255,254,254)' }}>AUD</Tab>
-                    <Tab _selected={{ color: 'rgb(68,0,162)', bg: 'rgb(255,254,254)' }}>CAD</Tab>
-                    <Tab _selected={{ color: 'rgb(68,0,162)', bg: 'rgb(255,254,254)' }}>INR</Tab>
-                </TabList>
-              </Tabs>   
+            <Flex bg="rgb(137,93,200)" gap={4} borderRadius="20px">
+              <button 
+                className={toggleState2 === 1 ? "tabs active-tabs" : "tabs"} 
+                onClick={()=> setToggleState2(1)}
+              >
+                USD
+              </button>
+              <button 
+                className={toggleState2 === 2 ? "tabs active-tabs" : "tabs"} 
+                onClick={()=> setToggleState2(2)}
+              >
+                EUR
+              </button>
+              <button 
+                className={toggleState2 === 3 ? "tabs active-tabs" : "tabs"} 
+                onClick={()=> setToggleState2(3)}
+              >
+                GBP
+              </button>
+              <button 
+                className={toggleState2 === 4 ? "tabs active-tabs" : "tabs"} 
+                onClick={()=> setToggleState2(4)}
+              >
+                AUD
+              </button>
+              <button 
+                className={toggleState2 === 5 ? "tabs active-tabs" : "tabs"} 
+                onClick={()=> setToggleState2(5)}
+              >
+                CAD
+              </button>
+              <button 
+                className={toggleState2 === 6 ? "tabs active-tabs" : "tabs"} 
+                onClick={()=> setToggleState2(6)}
+              >
+              INR
+              </button>
             </Flex>
-          </Flex>
-        </Box>
+          </Flex> 
+          </div>
+        </>
   )
 }
 
