@@ -1,0 +1,17 @@
+.signCustomer{
+    border: 2px solid rgb(255,120,70);
+    color: rgb(255,120,70);
+    padding: 10px 15px;
+    font-weight: 500;
+}
+.signCustomer:hover{
+    background-color: rgb(255,120,70);
+    color: white;
+}
+.talkButton{
+    color: blue;
+    font-weight: 500;
+}
+.talkButton:hover{
+    color: black;
+}

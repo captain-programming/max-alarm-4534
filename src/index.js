@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import {ChakraProvider} from "@chakra-ui/react";
 import theme from './Theme/theme';
+import { AllDataContext } from './Context/AllDataContext';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -14,7 +15,9 @@ root.render(
   <StrictMode>
     <BrowserRouter>
       <ChakraProvider theme={theme}>
-         <App /> 
+        <AllDataContext>
+          <App /> 
+         </AllDataContext>
       </ChakraProvider>
     </BrowserRouter>
   </StrictMode>
