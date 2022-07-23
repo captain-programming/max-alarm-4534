@@ -1,0 +1,20 @@
+.getDemoButton{
+    background-image: linear-gradient(to bottom, rgb(79,1,171), rgb(122,1,203));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.getDemoButton:hover{
+    background: rgb(122,1,203);
+}
+.buttonDiv{
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+.signFreeButton{
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
