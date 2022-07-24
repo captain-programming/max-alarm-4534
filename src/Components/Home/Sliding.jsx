@@ -6,10 +6,11 @@ import { DataContext } from '../../Context/AllDataContext';
 
 const Sliding = () => {
   const [slider, setSlider] = useState(0);
-  const data = useContext(DataContext);
+  const {founderInfo} = useContext(DataContext);
 
 
-  const slidingData=data.founderInfo[slider];
+  const slidingData=founderInfo[slider];
+  console.log(founderInfo)
   
   return (
     <>
