@@ -34,7 +34,7 @@ const Navbar = ({color}) => {
                 <Text>Log In  &#62;</Text>
             </Flex>
             </NavLink> 
-            <NavLink to={"/signup"}>
+            <NavLink to={"/get-demo"}>
                 <Flex bg="rgb(255,120,70)" p="8px 15px 8px 15px" m="-2"><Text>Get a Demo  &#62;</Text></Flex>
             </NavLink>
         </Flex>
