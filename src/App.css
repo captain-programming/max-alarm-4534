@@ -45,3 +45,56 @@
     height: 40px;
     font-size: 16px;
 }
+.signup-sliding{
+    border: 2px solid rgb(170, 169, 169);
+    height: 13px;
+    width: 13px;
+    border-radius: 10px;
+    background-color: rgb(170, 169, 169);
+}
+.signup-sliding-active{
+    border: 2px solid white;
+    background-color: rgb(255,164,103);
+    height: 12px;
+    width: 12px;
+}
+.complet-signup{
+    background-color: rgb(254,108,55);
+    padding: 10px 20px 10px 20px;
+    color: white;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.complet-signup:hover{
+    background-color: blue;
+}
+.scrolling{
+    display: flex;
+    width: calc(300px * 20);
+    animation: scroll 40s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translate(calc(-100px * 20));
+    }
+}
+
+.home-page-getdemo{
+    color: white;
+    background-color: rgb(127,68,254);
+    border-radius: 20%;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+
+}

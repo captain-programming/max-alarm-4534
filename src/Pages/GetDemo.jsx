@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 
 const GetDemo = () => {
    const {isOpen: isVisible, onClose, onOpen} = useDisclosure({defaultIsOpen: false})
-   const [country, setCountry] = useState("+91")
+   const [country, setCountry] = useState("+91");
 
   return isVisible ? (
     <Alert

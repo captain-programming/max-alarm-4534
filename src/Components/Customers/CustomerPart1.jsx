@@ -2,8 +2,14 @@ import React from 'react';
 import { Box, Flex, Heading, Image, Link, Text } from '@chakra-ui/react';
 import Navbar from '../Home/Navbar';
 import Styles from '../../Pages/Css/customer.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const CustomerPart1 = () => {
+  const navigate=useNavigate();
+
+  const handleCreate =()=>{
+    navigate("/create-account");
+  }
   return (
     <>
       <Box bg="rgb(241,240,244)" pb={"120px"}>
@@ -12,7 +18,7 @@ const CustomerPart1 = () => {
             <Box>
                 <Heading size={"xl"} fontSize="38px" w={"70%"} m="auto" mt={6} p={3} lineHeight="50px">Chargebee powers subscriptions for businesses of all sizes.</Heading>
                 <Flex pl="17%" gap={10} pt={10}>
-                    <button className={Styles.signCustomer}>Sign up for free</button>
+                    <button className={Styles.signCustomer} onClick={handleCreate}>Sign up for free</button>
                     <button className={Styles.talkButton}>Talk to us!</button>
                 </Flex>
             </Box>

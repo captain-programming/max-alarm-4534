@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import {Box, Button, Flex, Heading, Input, Link, Text, Container, Image} from "@chakra-ui/react";
-import { NavLink } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 
 const Login = () => {
   const [show, setShow] = useState("password")
+  const navigate= useNavigate();
+
+  // const handleSignup=() =>{
+  //   navigate("/create-account")
+  // }
   return (
     <>
       <Box bg={"rgb(234,235,245)"} height="100vh">
@@ -13,7 +18,7 @@ const Login = () => {
           <NavLink to={"/"}><text className="logo">Chargebee</text></NavLink>
           <Flex gap={2} alignItems={"center"}>
             <Text>Don't have an account?</Text>
-            <button className='loginNavbar'>Sign up →</button>
+            <NavLink to="/create-account"><button >Sign up →</button></NavLink>
           </Flex>
         </Flex>
         <Container boxShadow="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" bg={"white"} maxW={"60%"} borderRadius="10px" p="30px 50px 50px 50px" h={"420px"}>
@@ -48,7 +53,7 @@ const Login = () => {
                 </Button>
               </Flex>
               <Flex justifyContent={"space-between"} alignItems="center">
-                <button className='login-form-signin'>Sign In</button>
+                <button className='login-form-signin' onClick={()=> navigate("/")}>Sign In</button>
                 <Link fontSize={"12px"} color="blackAlpha.700">Forgot password?</Link>
               </Flex>
               <Flex alignItems={"center"}>
