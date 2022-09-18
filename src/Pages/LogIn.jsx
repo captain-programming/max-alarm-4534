@@ -13,7 +13,9 @@ const Login = () => {
           <NavLink to={"/"}><text className="logo">Chargebee</text></NavLink>
           <Flex gap={2} alignItems={"center"}>
             <Text>Don't have an account?</Text>
-            <button className='loginNavbar'>Sign up →</button>
+            <button className='loginNavbar'>
+              <NavLink to={'/'}>Sign up →</NavLink>
+            </button>
           </Flex>
         </Flex>
         <Container boxShadow="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" bg={"white"} maxW={"60%"} borderRadius="10px" p="30px 50px 50px 50px" h={"420px"}>
